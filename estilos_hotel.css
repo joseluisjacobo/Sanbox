@@ -1,0 +1,279 @@
+<!--Flexbox -->
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap');
+  
+  
+  .cajas {
+    /*border: 1px solid rgb(78, 77, 77);*/
+    background-color: bisque;
+    color: black;
+    /*font-family: 'Courier New', Courier, monospace;*/
+    font-weight: bold;
+    /*width: 200px;*/
+    /*line-height: 250px;*/
+    text-align: center;
+    margin: 2px;
+}
+
+
+/*.banner_header{
+    background-image: url('fondoBanner.jpg'); background-size: cover; background-position: top; background-attachment: fixed;
+
+}*/
+
+.c1 {
+    /*border: 1px solid rgb(78, 77, 77);*/
+    background-color: rgb(241, 164, 63);
+    order: 1;
+    flex-grow: 1;
+    flex-basis: 100%;
+    text-align: right;
+    /* padding: 40px 0px; SE QUITO POR QUE VA IMAGEN */
+    /*align-items: center;*/
+    text-align: center;
+}
+
+.c1interna {
+    /*border: 1px solid rgb(78, 77, 77);*/
+    background-color: rgb(241, 164, 63);
+    order: 1;
+    flex-grow: 1;
+    flex-basis: 100%;
+    text-align: right;
+    /* padding: 40px 0px; SE QUITO POR QUE VA IMAGEN */
+    /*align-items: center;*/
+    text-align: center;
+}
+
+.c2interna {
+    /*border: 1px solid rgb(78, 77, 77);*/
+    background-color: rgb(150, 164, 63);
+    order: 3;
+    flex-grow: 2;
+    /*flex-basis: 50%;*/
+    /*text-align: right;*/
+    /*padding: 40px 0px; SE QUITO POR QUE VA IMAGEN */
+    /*align-items: right;*/
+}
+
+.c3interna {
+    /*border: 1px solid rgb(78, 77, 77);*/
+    /*background-color: rgb(68, 18, 206);*/
+    order: 3;
+    flex-grow: 3;
+    flex-basis: 40%;
+    /*box-flex-group: 1;*/
+}
+
+.c1a {
+    /*border: 1px solid rgb(78, 77, 77);*/
+    background-color: rgb(150, 164, 63);
+    order: 3;
+    flex-grow: 1;
+    /*flex-basis: 50%;*/
+    /*text-align: right;*/
+    /*padding: 40px 0px; SE QUITO POR QUE VA IMAGEN */
+    /*align-items: right;*/
+}
+
+
+
+.c2 {
+    /*border: 1px solid rgb(78, 77, 77);*/
+    background-color: rgb(17, 238, 83);*/
+    order: 2;
+    flex-grow: 1;
+    /*flex-basis: 50%;*/
+    /*box-flex-group: 1;*/
+    align-items: center;
+    justify-content: center;
+    display: flex
+}
+
+.c3 {
+    /*border: 1px solid rgb(78, 77, 77);*/
+    /*background-color: rgb(68, 18, 206);*/
+    order: 4;
+    flex-grow: 1;
+    flex-basis: 20%;
+    /*box-flex-group: 1;*/
+}
+
+
+@media (min-width:300px) and (max-width: 700px) {
+     
+  
+    .cajas {
+        /*border: 1px solid rgb(248, 247, 247);*/
+        /*background-color: rgba(240, 255, 255, 0);*/
+        color: black;
+        /*font-family: 'Courier New', Courier, monospace;*/
+        /*font-weight: bold;*/
+        width: 200px;
+        line-height: 25px;
+        text-align: center;
+        margin: 2px;
+    }
+    .c1 {
+        /*border: 1px solid rgb(78, 77, 77);*/
+        /*background-color: rgba(240, 255, 255, 0);*/
+        order: 1;
+        /*flex-grow: 1;*/
+        /*flex-basis: 100%;*/
+        /*box-flex-group: 1;*/
+    }
+    .c1a {
+        /*border: 1px solid rgb(78, 77, 77);*/
+        /*background-color: rgba(240, 255, 255, 0);*/
+        order: 2;
+        /*flex-grow: 1;*/
+        /*flex-basis: 100%;*/
+        /*box-flex-group: 1;*/
+        justify-content: center;
+    }
+    .c2 {
+        /*border: 1px solid rgb(78, 77, 77);*/
+        /*background-color: rgb(100, 59, 4);*/
+        background-color: rgba(240, 255, 255, 0);
+        order: 3;
+        /*flex-grow: 1;*/
+        flex-basis: 100%;
+    }
+
+    .c1interna {
+    /*border: 1px solid rgb(78, 77, 77);*/
+    background-color: rgb(241, 164, 63);
+    order: 1;
+    flex-grow: 1;
+    flex-basis: 100%;
+    text-align: right;
+    /* padding: 40px 0px; SE QUITO POR QUE VA IMAGEN */
+    /*align-items: center;*/
+    text-align: center;
+}
+
+.c2interna {
+    /*border: 1px solid rgb(78, 77, 77);*/
+    background-color: rgb(150, 164, 63);
+    order: 2;
+    flex-grow: 2;
+    /*flex-basis: 50%;*/
+    /*text-align: right;*/
+    /*padding: 40px 0px; SE QUITO POR QUE VA IMAGEN */
+    /*align-items: right;*/
+}
+
+.c3interna {
+    /*border: 1px solid rgb(78, 77, 77);*/
+    /*background-color: rgb(68, 18, 206);*/
+    order: 3;
+    flex-grow: 3;
+    flex-basis: 100%;
+    /*box-flex-group: 1;*/
+}
+
+
+
+
+}
+
+@media (min-width:701px) and (max-width: 1139px) {
+   
+	.c1 h1 br{
+    display: none;
+  	}
+   	
+    .cajas {
+        /*border: 1px solid rgb(248, 247, 247);*/
+        /*background-color: rgba(240, 255, 255, 0);*/
+        color: black;
+        /*font-family: 'Courier New', Courier, monospace;*/
+        font-weight: bold;
+        width: 200px;
+        line-height: 25px;
+        text-align: center;
+        margin: 2px;
+    }
+    .c1 {
+        /*border: 1px solid rgb(78, 77, 77);*/
+        /*background-color: rgba(240, 255, 255, 0);*/
+        order: 1;
+        flex-grow: 1;
+        flex-basis: 100%;
+        text-align: right;
+        /* padding: 40px 0px; SE QUITO POR QUE VA IMAGEN */
+        /*align-items: center;*/
+        align-items: center;
+        justify-content: center;
+        display: flex
+
+    }
+  
+  	
+  
+    .c1a {
+       /* border: 1px solid rgb(78, 77, 77);*/
+        /*background-color: rgba(240, 255, 255, 0);*/
+        order: 2;
+        flex-grow: 1;
+        
+        /* padding: 40px 0px; SE QUITO POR QUE VA IMAGEN */
+        /*align-items: center;*/
+        justify-content: center;
+    }
+    .c2 {
+        /*border: 1px solid rgb(78, 77, 77);*/
+        /*background-color: rgb(100, 59, 4);*/
+        background-color: rgba(240, 255, 255, 0);
+        order: 3;
+        /*flex-grow: 1;*/
+        flex-basis: 100%;
+
+        
+    }
+}
+
+ 
+  
+
+
+
+
+.c3 {
+    /*border: 1px solid rgb(78, 77, 77);*/
+    /*background-color: rgb(100, 59, 4);*/
+    order: 3;
+    flex-grow: 1;
+    /*flex-basis: 20%;*/
+}
+
+.flex-container {
+    /*background-color: rgba(0,0,0,0.68) !important; FONDO TIPO BANNER CESSA */
+    background-blend-mode: multiply;
+    /*background-color: rgb(199, 218, 177);*/
+    /*background-image: -moz-element();*/
+    /*background-image: url('fondoBanner.jpg'); background-size: cover; background-position: top; background-attachment: fixed;*/
+    /*border: 1px solid black;*/
+    /*padding: 5px;*/
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    flex-flow: row wrap;
+    align-content: center;
+    width: 100%;
+    height: 400px; 
+    justify-content: center;
+    /*line-height: 200px;*/
+}
+
+  
+   
+  @media (min-width:1140px) {
+   
+	.c1 h1 br{
+    display: none;
+  	}
+  
+  
+</style>
